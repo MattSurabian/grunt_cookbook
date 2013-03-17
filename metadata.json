@@ -1,0 +1,32 @@
+{
+  "groupings": {
+  },
+  "long_description": "grunt-cookbook\n==============\n\nThis is a cookbook that can be used to install and run grunt tasks from within chef.",
+  "recipes": {
+    "grunt_cookbook::install_grunt_prereq": "Installs Nodejs and NPM so grunt can do its thing",
+    "grunt_cookbook::install_grunt_cli": "Installs the grunt-cli globally using NPM."
+  },
+  "recommendations": {
+  },
+  "dependencies": {
+    "nodejs": ">= 0.0.0"
+  },
+  "version": "1.0.0",
+  "replacing": {
+  },
+  "providing": {
+  },
+  "license": "MIT",
+  "maintainer_email": "matt@mattsurabian.com",
+  "name": "grunt_cookbook",
+  "suggestions": {
+  },
+  "attributes": {
+  },
+  "conflicting": {
+  },
+  "platforms": {
+  },
+  "maintainer": "Matt Surabian",
+  "description": "Provides lightweight resources and recipes for installing and working with GRUNT."
+}
