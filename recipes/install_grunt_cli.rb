@@ -5,6 +5,8 @@
 # As this is global install just run the command rather than using the npm resource.
 #
 
-execute "npm install -g grunt-cli" do
-  action :run
+grunt_cookbook_npm "/" do
+  action :install
+  package "grunt-cli"
+  flags "--global"
 end

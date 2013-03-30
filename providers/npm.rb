@@ -7,6 +7,7 @@ action :install do
   # Import
   dir = @new_resource.dir
   package_name = @new_resource.package_name
+  flags = @new_resource.flags
 
   # Check
   unless dir then
@@ -19,11 +20,17 @@ action :install do
 
   # Prepare NPM command
   npm_command = "npm install"
+
   unless package_name.nil? or package_name.empty?
     npm_command += " #{package_name}"
+  end
+
+  unless flags.nil? or flags.empty?
+      npm_command += " #{flags}"
   end
 
   execute npm_command do
     cwd dir
   end
+
 end
