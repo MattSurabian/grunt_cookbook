@@ -33,7 +33,9 @@ end
 
 You could of course utilize a 
 
-```#{node[:attribute][:var]}```
+```ruby
+#{node[:attribute][:var]}
+```
 
 to store the path to your project dir.
 
