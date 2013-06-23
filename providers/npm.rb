@@ -6,7 +6,7 @@
 action :install do
   # Import
   dir = @new_resource.dir
-  package_name = @new_resource.package_name
+  package = @new_resource.package
   flags = @new_resource.flags
 
   # Check
@@ -21,8 +21,8 @@ action :install do
   # Prepare NPM command
   npm_command = "npm install"
 
-  unless package_name.nil? or package_name.empty?
-    npm_command += " #{package_name}"
+  unless package.nil? or package.empty?
+    npm_command += " #{package}"
   end
 
   unless flags.nil? or flags.empty?
