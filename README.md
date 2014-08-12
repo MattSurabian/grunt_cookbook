@@ -40,6 +40,21 @@ You could of course utilize a
 to store the path to your project dir.
 
 
+Using ``Cheffile``
+==================
+For detailed usage instructions visit https://github.com/applicationsonline/librarian and follow the README.md.
+
+```ruby
+cookbook 'grunt_cookbook',
+  :git => 'git://github.com/MattSurabian/grunt_cookbook.git'
+```
+
+And then install `grunt` and `grunt-cli`:
+
+```ruby
+include_recipe "grunt_cookbook"
+```
+
 Dependencies
 ==============
 * [nodejs](https://github.com/mdxp/nodejs-cookbook) - Most available cookbooks will probably work, but I used [this one](https://github.com/mdxp/nodejs-cookbook) while developing grunt_cookbook.
