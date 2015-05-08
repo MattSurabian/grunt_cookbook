@@ -1,3 +1,4 @@
+name             "grunt_cookbook"
 maintainer       "Matt Surabian"
 maintainer_email "matt@mattsurabian.com"
 license          "MIT"
